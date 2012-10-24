@@ -40,7 +40,7 @@ public class AppMenu extends Plugin {
 
 	public void getScreenDensity() {
 		try {
-                    final DroidGap droidGap = ((DroidGap) this.cordova);
+			final DroidGap droidGap = (DroidGap) this.cordova.getActivity();
 			DisplayMetrics metrics = new DisplayMetrics();
 			droidGap.getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
@@ -239,7 +239,7 @@ public class AppMenu extends Plugin {
 	public boolean onMenuItemSelected(MenuItem item) {
 		// This is where everything tends to fall down, we should instead
 		// something else
-		webView.loadUrl("javascript:window.plugins.SimpleMenu.fireCallback(" + item.getItemId() + ")");
+		webView.loadUrl("javascript:window.SimpleMenu.fireCallback(" + item.getItemId() + ")");
 		return true;
 	}
 
@@ -257,8 +257,7 @@ public class AppMenu extends Plugin {
 			MenuItem item = (MenuItem) data;
 			onMenuItemSelected(item);
 		}
-
-                return data;
+		return null;
 	}
 
 }
