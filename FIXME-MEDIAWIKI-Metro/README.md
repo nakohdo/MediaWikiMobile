@@ -52,10 +52,10 @@ or
 ### Project file layout
 
   WikipediaMobile/
-    WikipediaMetro/
-      WikipediaMetroTest.sln - the solution (über-project)
-      WikipediaMetroTest/
-        WikipediaMetroTest.jsproj - the actual app project
+    FIXME-MEDIAWIKI-Metro/
+      FIXME-MEDIAWIKI-MetroTest.sln - the solution (über-project)
+      FIXME-MEDIAWIKI-MetroTest/
+        FIXME-MEDIAWIKI-MetroTest.jsproj - the actual app project
         default.html - main HTML5 document
         about.html - secondary HTML5 document for about screen
         css/
@@ -74,8 +74,8 @@ project in Visual Studio.
 
 ### Opening the project
 
-Open an Explorer window to your checkout, and navigate to the 'WikipediaMetro'
-subdirectory. Double-click on "WikipediaMetroTest.sln" (if file extensions are
+Open an Explorer window to your checkout, and navigate to the 'FIXME-MEDIAWIKI-Metro'
+subdirectory. Double-click on "FIXME-MEDIAWIKI-MetroTest.sln" (if file extensions are
 hidden as per default, it's the one that's not a subdirectory).
 
 This should open the "solution" (collection of one or more projects) and the

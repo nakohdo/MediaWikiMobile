@@ -3,6 +3,7 @@ package org.wikipedia;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
+import android.util.Log;
 
 import org.apache.cordova.DroidGap;
 
@@ -17,7 +18,7 @@ public class WikipediaActivity extends DroidGap {
 
 		try {
 			PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-			this.appView.getSettings().setUserAgentString("WikipediaMobile/" + pInfo.versionName + " " + currentUA);
+			this.appView.getSettings().setUserAgentString("FIXME-USER-AGENT/" + pInfo.versionName + " " + currentUA);
 		} catch (NameNotFoundException e) {
 			// This never actually happens. Trust me, I'm an engineer!
 		}

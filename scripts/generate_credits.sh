@@ -1,6 +1,6 @@
 #! /bin/sh
 
-echo "Wikipedia Mobile is a collaborative project released under the 
+echo "FIXME-MEDIAWIKI Mobile is a collaborative project released under the 
 GNU General Public License v2. We would like to recognize the 
 following names for their contribution to the product. 
 
@@ -11,7 +11,7 @@ git log | grep ^Author: | sed 's/ <.*//; s/^Author: //' | sort | uniq | sort -df
 echo "
 
 == Included external works ==
-Wikipedia Mobile builds upon many Open Source works including:
+FIXME-MEDIAWIKI Mobile builds upon many Open Source works including:
 * PhoneGap, Apache License 2.0, http://phonegap.com
 * ShareKit, MIT License, https://github.com/shareKit/ShareKit
 ** ShareKit includes pre-compiled work from:

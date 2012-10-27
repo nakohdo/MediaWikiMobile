@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Wikipedia-iOS
+//  FIXME-MEDIAWIKI-iOS
 //
 //  Created by Brion Vibber on 10/30/11.
 //  Copyright nobody -- this is stub template code!

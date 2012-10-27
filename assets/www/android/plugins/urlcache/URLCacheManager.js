@@ -45,7 +45,7 @@ if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) 
              ftw(request.uri, this.imageCache[request.uri]);
             }
             else {
-             window.urlCache.getCachedPathforURI(request.uri,ftw,wtf);
+             window.plugins.urlCache.getCachedPathforURI(request.uri,ftw,wtf);
             }
         }
     }
@@ -61,9 +61,11 @@ if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) 
         this._getNextImage();
     }
 
-	cordova.addConstructor(function() {
-		window.urlCacheManager = new ImageCacheManager();
-	});
+    if ( !window.plugins ) 
+        window.plugins = {}; 
+            
+    if ( !window.plugins.urlCacheManager ) 
+        window.plugins.urlCacheManager = new ImageCacheManager();
 }
 else if ( navigator.userAgent.match(/browzr/i) ||
           navigator.userAgent.match(/blackberry\d*\/(5|6)\..*/i) || 
@@ -78,12 +80,10 @@ else if ( navigator.userAgent.match(/browzr/i) ||
         if (cachedPath) {
             success(uri, cachedPath);
         } else {
-            retVal = window.urlCache.getCachedPathForURI(uri, success, fail);
+            retVal = window.plugins.urlCache.getCachedPathForURI(uri, success, fail);
         }
         return retVal;
     }
 
-	cordova.addConstructor(function() {
-		window.urlCacheManager = new ImageCacheManager();
-	});
+    PhoneGap.addPlugin('urlCacheManager', new ImageCacheManager());
 }

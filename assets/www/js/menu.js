@@ -28,10 +28,10 @@ var menu_items = [
 		action: chrome.goForward,
 		disabled: true
 	},
-	{
-		id: 'read-in',
-		action:  function() { languageLinks.showLangLinks(app.curPage); }
-	},
+	// {
+	// 	id: 'read-in',
+	// 	action:  function() { languageLinks.showLangLinks(app.curPage); }
+	// },
 	{
 		id: 'page-actions',
 		action: function() {
@@ -125,7 +125,7 @@ function showListActions(origin) {
 		mw.msg('menu-cancel')
 	], function(val, index) {
 		if (index == 0) {
-			geo.showNearbyArticles();
+			// geo.showNearbyArticles();
 		} else if (index == 1) {
 			savedPages.showSavedPages();
 		} else if (index == 2) {

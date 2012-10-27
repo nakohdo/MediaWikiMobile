@@ -18,6 +18,7 @@ SoftKeyBoard.prototype.hide = function(win, fail) {
             []);	
 };
 
-cordova.addConstructor(function() {
-	window.SoftKeyBoard = new SoftKeyBoard();
+PhoneGap.addConstructor(function() {
+    PhoneGap.addPlugin('SoftKeyBoard', new SoftKeyBoard());
+    // PluginManager.addService("SoftKeyBoard","com.phonegap.softkeyboard.SoftKeyBoard");
 });

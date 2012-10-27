@@ -53,7 +53,7 @@ if (platform == 'unknown') {
 	// Assume we're a generic web browser.
 	platform = 'web';
 } else {
-	includes.push('cordova.js');
+	includes.push('cordova-1.7.0.js');
 	var plugins = {
 		android: [
 			'menu/menu.android.js',

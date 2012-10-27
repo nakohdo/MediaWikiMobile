@@ -123,7 +123,7 @@
 		D481B95F145DFE5D00D9F872 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = assets/www; sourceTree = "<group>"; };
 		D4843A89147DAC2D007499DC /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Resources/splash/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		D4843A8A147DAC2D007499DC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "Resources/splash/Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		D4BE95FA145DFD2D0025EC00 /* Wikipedia-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BE95FA145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIXME-MEDIAWIKI-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BE95FE145DFD2D0025EC00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4BE9600145DFD2D0025EC00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D4BE9602145DFD2D0025EC00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,10 +137,10 @@
 		D4BE9612145DFD2D0025EC00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D4BE9614145DFD2D0025EC00 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D4BE9616145DFD2D0025EC00 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		D4BE961A145DFD2D0025EC00 /* Wikipedia-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wikipedia-iOS-Info.plist"; sourceTree = "<group>"; };
+		D4BE961A145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FIXME-MEDIAWIKI-iOS-Info.plist"; sourceTree = "<group>"; };
 		D4BE961C145DFD2D0025EC00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4BE961E145DFD2D0025EC00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D4BE9620145DFD2D0025EC00 /* Wikipedia-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wikipedia-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		D4BE9620145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FIXME-MEDIAWIKI-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		D4BE9626145DFD2D0025EC00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D4BE962A145DFD2D0025EC00 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D4BE962D145DFD2D0025EC00 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
@@ -151,9 +151,9 @@
 		D4BE9638145DFD2D0025EC00 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		D4BE963D145DFD2D0025EC00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		D4BE963E145DFD2D0025EC00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		D4E8A4B214D08ED400993351 /* ActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheet.h; path = "Wikipedia-iOS/Plugins/ActionSheet/ActionSheet.h"; sourceTree = SOURCE_ROOT; };
-		D4E8A4B314D08ED400993351 /* ActionSheet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ActionSheet.js; path = "Wikipedia-iOS/Plugins/ActionSheet/ActionSheet.js"; sourceTree = SOURCE_ROOT; };
-		D4E8A4B414D08ED400993351 /* ActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheet.m; path = "Wikipedia-iOS/Plugins/ActionSheet/ActionSheet.m"; sourceTree = SOURCE_ROOT; };
+		D4E8A4B214D08ED400993351 /* ActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheet.h; path = "FIXME-MEDIAWIKI-iOS/Plugins/ActionSheet/ActionSheet.h"; sourceTree = SOURCE_ROOT; };
+		D4E8A4B314D08ED400993351 /* ActionSheet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ActionSheet.js; path = "FIXME-MEDIAWIKI-iOS/Plugins/ActionSheet/ActionSheet.js"; sourceTree = SOURCE_ROOT; };
+		D4E8A4B414D08ED400993351 /* ActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheet.m; path = "FIXME-MEDIAWIKI-iOS/Plugins/ActionSheet/ActionSheet.m"; sourceTree = SOURCE_ROOT; };
 		D4FE90AB1603DB3100C76F36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/splash/Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,7 +290,7 @@
 				9999388D156D803E0048DB2B /* deprecated */,
 				6108B4011512B0CA00779B71 /* Accounts.framework */,
 				D481B95F145DFE5D00D9F872 /* www */,
-				D4BE9618145DFD2D0025EC00 /* Wikipedia-iOS */,
+				D4BE9618145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS */,
 				D4BE95FD145DFD2D0025EC00 /* Frameworks */,
 				D4BE95FB145DFD2D0025EC00 /* Products */,
 			);
@@ -299,7 +299,7 @@
 		D4BE95FB145DFD2D0025EC00 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4BE95FA145DFD2D0025EC00 /* Wikipedia-iOS.app */,
+				D4BE95FA145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D4BE9618145DFD2D0025EC00 /* Wikipedia-iOS */ = {
+		D4BE9618145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				D4BE9623145DFD2D0025EC00 /* Resources */,
@@ -337,16 +337,16 @@
 				D4BE9640145DFD2D0025EC00 /* Plugins */,
 				D4BE9619145DFD2D0025EC00 /* Supporting Files */,
 			);
-			path = "Wikipedia-iOS";
+			path = "FIXME-MEDIAWIKI-iOS";
 			sourceTree = "<group>";
 		};
 		D4BE9619145DFD2D0025EC00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D4BE961A145DFD2D0025EC00 /* Wikipedia-iOS-Info.plist */,
+				D4BE961A145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS-Info.plist */,
 				D4BE961B145DFD2D0025EC00 /* InfoPlist.strings */,
 				D4BE961E145DFD2D0025EC00 /* main.m */,
-				D4BE9620145DFD2D0025EC00 /* Wikipedia-iOS-Prefix.pch */,
+				D4BE9620145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS-Prefix.pch */,
 				99CC918D156D89E2007F84D5 /* Cordova.plist */,
 			);
 			name = "Supporting Files";
@@ -432,9 +432,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4BE95F9145DFD2D0025EC00 /* Wikipedia-iOS */ = {
+		D4BE95F9145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4BE9644145DFD2D0025EC00 /* Build configuration list for PBXNativeTarget "Wikipedia-iOS" */;
+			buildConfigurationList = D4BE9644145DFD2D0025EC00 /* Build configuration list for PBXNativeTarget "FIXME-MEDIAWIKI-iOS" */;
 			buildPhases = (
 				D4BE95F3145DFD2D0025EC00 /* Sources */,
 				D4BE95F4145DFD2D0025EC00 /* Frameworks */,
@@ -447,9 +447,9 @@
 			);
 			dependencies = (
 			);
-			name = "Wikipedia-iOS";
-			productName = "Wikipedia-iOS";
-			productReference = D4BE95FA145DFD2D0025EC00 /* Wikipedia-iOS.app */;
+			name = "FIXME-MEDIAWIKI-iOS";
+			productName = "FIXME-MEDIAWIKI-iOS";
+			productReference = D4BE95FA145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -461,7 +461,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Wikimedia Foundation";
 			};
-			buildConfigurationList = D4BE95F1145DFD2D0025EC00 /* Build configuration list for PBXProject "Wikipedia-iOS" */;
+			buildConfigurationList = D4BE95F1145DFD2D0025EC00 /* Build configuration list for PBXProject "FIXME-MEDIAWIKI-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -475,7 +475,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4BE95F9145DFD2D0025EC00 /* Wikipedia-iOS */,
+				D4BE95F9145DFD2D0025EC00 /* FIXME-MEDIAWIKI-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -659,11 +659,11 @@
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Wikipedia-iOS/Wikipedia-iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "FIXME-MEDIAWIKI-iOS/FIXME-MEDIAWIKI-iOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "CORDOVA_FRAMEWORK=YES";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "Wikipedia-iOS/Wikipedia-iOS-Info.plist";
+				INFOPLIST_FILE = "FIXME-MEDIAWIKI-iOS/FIXME-MEDIAWIKI-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -694,11 +694,11 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Wikipedia-iOS/Wikipedia-iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "FIXME-MEDIAWIKI-iOS/FIXME-MEDIAWIKI-iOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "CORDOVA_FRAMEWORK=YES";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "Wikipedia-iOS/Wikipedia-iOS-Info.plist";
+				INFOPLIST_FILE = "FIXME-MEDIAWIKI-iOS/FIXME-MEDIAWIKI-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -720,7 +720,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4BE95F1145DFD2D0025EC00 /* Build configuration list for PBXProject "Wikipedia-iOS" */ = {
+		D4BE95F1145DFD2D0025EC00 /* Build configuration list for PBXProject "FIXME-MEDIAWIKI-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4BE9642145DFD2D0025EC00 /* Debug */,
@@ -729,7 +729,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4BE9644145DFD2D0025EC00 /* Build configuration list for PBXNativeTarget "Wikipedia-iOS" */ = {
+		D4BE9644145DFD2D0025EC00 /* Build configuration list for PBXNativeTarget "FIXME-MEDIAWIKI-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4BE9645145DFD2D0025EC00 /* Debug */,

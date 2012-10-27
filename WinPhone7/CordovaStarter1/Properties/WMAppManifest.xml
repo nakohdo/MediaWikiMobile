@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{5dc715dd-65f7-45a4-af9e-65e0a16c7076}" Title="Wikipedia" 
-       RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  
-       Author="Wikimedia Foundation, Inc." 
-       Description="Wikipedia for Windows Phone 7.5" 
-       Publisher="Wikimedia Foundation, Inc.">
-    
+  <App xmlns="" ProductID="{5dc715dd-65f7-45a4-af9e-65e0a16c7076}" Title="FIXME-MEDIAWIKI"
+       RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"
+       Author="FIXME-AUTHOR"
+       Description="FIXME-MEDIAWIKI for Windows Phone 7.5"
+       Publisher="FIXME-PUBLISHER">
+
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
@@ -22,9 +22,9 @@
       <Capability Name="ID_CAP_PHONEDIALER"/>
       <Capability Name="ID_CAP_PUSH_NOTIFICATION"/>
       <Capability Name="ID_CAP_SENSORS"/>
-      <Capability Name="ID_HW_FRONTCAMERA"/>      
+      <Capability Name="ID_HW_FRONTCAMERA"/>
     </Capabilities>
-    
+
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
     </Tasks>
@@ -33,7 +33,7 @@
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>Wikipedia</Title>
+          <Title>FIXME-MEDIAWIKI</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>

@@ -19,7 +19,7 @@
 
 //
 //  AppDelegate.h
-//  Wikipedia-iOS
+//  FIXME-MEDIAWIKI-iOS
 //
 //  Created by Yuvi Panda on 24/02/12.
 //  Copyright yuvipanda@gmail.com 2012. All rights reserved.
@@ -36,7 +36,7 @@
 }
 
 // invoke string is passed to your app on launch, this is only valid if you 
-// edit Wikipedia-iOS.plist to add a protocol
+// edit FIXME-MEDIAWIKI-iOS.plist to add a protocol
 // a simple tutorial can be found here : 
 // http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
 

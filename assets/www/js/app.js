@@ -46,7 +46,7 @@ window.app = function() {
 		chrome.scrollTo("#content", 0);
 		appHistory.addCurrentPage();
 		chrome.toggleMoveActions();
-		geo.addShowNearbyLinks();
+		// geo.addShowNearbyLinks();
 		$("#page-footer").show();
 		chrome.showContent();
 		chrome.hideSpinner();
@@ -122,7 +122,7 @@ window.app = function() {
 	}
 
 	function baseUrlForLanguage(lang) {
-		return window.PROTOCOL + '://' + lang + '.' + PROJECTNAME + '.org';
+		return 'http://www.alexandermen.com';
 	}
 
 	function makeCanonicalUrl(lang, title) {
@@ -217,7 +217,7 @@ window.app = function() {
 		params = params || {};
 		params.format = 'json'; // Force JSON
 		lang = lang || preferencesDB.get('language');
-		var url = app.baseUrlForLanguage(lang) + '/w/api.php';
+		var url = app.baseUrlForLanguage(lang) + '/api.php';
 		var defaultOptions = {
 			url: url,
 			data: params,

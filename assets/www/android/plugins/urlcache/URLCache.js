@@ -38,8 +38,12 @@ if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) 
         return this._cache[uri];
     }
 
-    cordova.addConstructor(function() {
-		window.urlCache = new URLCache();
+    PhoneGap.addConstructor(function() {
+        if ( !window.plugins ) 
+            window.plugins = {}; 
+
+        if ( !window.plugins.urlCache ) 
+            window.plugins.urlCache = new URLCache();
     });
 }
 else if ( navigator.userAgent.match(/browzr/i) ) {
@@ -57,9 +61,7 @@ else if ( navigator.userAgent.match(/browzr/i) ) {
         }, 'ca.rnao.bpg.plugins.URLCache', 'getCachedPathForURI', [uri, 'RNAO']);
     };
 
-	cordova.addConstructor(function() {
-		window.urlCache = new Cache();
-	});
+    PhoneGap.addPlugin('urlCache', new Cache());
 }
 else if ( navigator.userAgent.match(/blackberry\d*\/(5|6)\..*/i) ) {
 
@@ -82,9 +84,7 @@ else if ( navigator.userAgent.match(/blackberry\d*\/(5|6)\..*/i) ) {
         );
     };
 
-	cordova.addConstructor(function() {
-		window.urlCache = new Cache();
-	});
+    PhoneGap.addPlugin('urlCache', new Cache());
 }
 else if ( navigator.userAgent.match(/Android/i) ) {
 
@@ -102,7 +102,6 @@ else if ( navigator.userAgent.match(/Android/i) ) {
         );
     };
 
-	cordova.addConstructor(function() {
-		window.urlCache = new Cache();
-	});
+    PhoneGap.addPlugin('urlCache', new Cache());
+//	PluginManager.addService("URLCache","com.nitobi.rnao.plugins.URLCache");
 }

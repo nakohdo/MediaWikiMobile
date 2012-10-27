@@ -9,6 +9,6 @@ var CacheMode = function() {
 	}
 };
 			
-cordova.addConstructor(function() {
-	window.CacheMode = new CacheMode();
+PhoneGap.addConstructor(function() {
+	PhoneGap.addPlugin('CacheMode', new CacheMode());
 });

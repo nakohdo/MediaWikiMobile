@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Wikipedia-iOS.xcodeproj">
+      location = "self:FIXME-MEDIAWIKI-iOS.xcodeproj">
    </FileRef>
 </Workspace>

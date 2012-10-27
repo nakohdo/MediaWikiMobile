@@ -19,7 +19,7 @@
 
 //
 //  AppDelegate.m
-//  Wikipedia-iOS
+//  FIXME-MEDIAWIKI-iOS
 //
 //  Created by Yuvi Panda on 24/02/12.
 //  Copyright yuvipanda@gmail.com 2012. All rights reserved.
@@ -137,7 +137,7 @@
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
     NSString *currentUserAgent = [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
     
-    NSDictionary *userAgentDictionary = [[NSDictionary alloc] initWithObjectsAndKeys:[NSString stringWithFormat:@"%@%@",@"WikipediaMobile/3.3 ",currentUserAgent], @"UserAgent", nil];
+    NSDictionary *userAgentDictionary = [[NSDictionary alloc] initWithObjectsAndKeys:[NSString stringWithFormat:@"%@%@",@"FIXME-USER-AGENT ",currentUserAgent], @"UserAgent", nil];
     [webView release];
     
     [[NSUserDefaults standardUserDefaults] registerDefaults:userAgentDictionary];    

@@ -98,6 +98,8 @@ SimpleMenu.prototype.fireCallback = function(index)
   }
 }
 
-cordova.addConstructor(function() {
-	window.SimpleMenu = new SimpleMenu();
+PhoneGap.addConstructor(function() 
+{
+  PhoneGap.addPlugin("SimpleMenu", new SimpleMenu());
 });
+

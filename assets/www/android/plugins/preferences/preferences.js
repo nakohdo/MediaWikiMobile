@@ -22,7 +22,6 @@ Preferences.prototype.set = function(id, value, success, fail) {
     }, 'Preferences', 'set', [{'id': id, 'value': value}]);
 };
 
-
-cordova.addConstructor(function() {
-	window.preferences = new Preferences();
+PhoneGap.addConstructor(function() {
+	PhoneGap.addPlugin('preferences', new Preferences());
 });

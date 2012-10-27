@@ -35,7 +35,7 @@ public class HttpApi {
 			}
 			return new String(content.toByteArray());
 		} catch (IOException e) {
-			Log.e("Wikipedia-api", e.getMessage());
+			Log.e("FIXME-MEDIAWIKI-api", e.getMessage());
 			throw new Exception("Problem communicating with API", e);
 		}
 	}

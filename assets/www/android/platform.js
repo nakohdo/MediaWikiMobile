@@ -36,7 +36,7 @@ function getAboutVersionString() {
 })();
 
 function setMenuItemState(action, state) {
-	window.SimpleMenu.setMenuState(action, state, function() {}, function() {});
+	window.plugins.SimpleMenu.setMenuState(action, state, function() {}, function() {});
 }
 
 function setPageActionsState(state) {
@@ -79,11 +79,11 @@ chrome.addPlatformInitializer(function() {
 		$('#searchParam').focus().addClass('active');
 		$('#searchParam').bind('blur', function() {
 			  $('#searchParam').removeClass('active');
-			  window.SoftKeyBoard.hide();
+			  plugins.SoftKeyBoard.hide();
 			  $('#searchParam').unbind('blur');
 		});
 		
-		window.SoftKeyBoard.show();
+		plugins.SoftKeyBoard.show();
 		
 	}
 
@@ -94,7 +94,7 @@ chrome.addPlatformInitializer(function() {
 	var origLoadFirstPage = chrome.loadFirstPage;
 	chrome.loadFirstPage = function() {
 		var d = $.Deferred();
-		window.webintent.getIntentData(function(args) {
+		plugins.webintent.getIntentData(function(args) {
 			if(args.action == "android.intent.action.VIEW" && args.uri) {
 				app.navigateToPage(args.uri).done(function() {
 					d.resolve.apply(arguments);
@@ -102,7 +102,7 @@ chrome.addPlatformInitializer(function() {
 					d.reject.apply(arguments);
 				});
 			} else if(args.action == "android.intent.action.SEARCH") {
-				window.webintent.getExtra("query",
+				plugins.webintent.getExtra("query", 
 					function(query) {
 						search.performSearch(query, false).done(function() {
 							d.resolve.apply(arguments);
@@ -125,7 +125,7 @@ chrome.addPlatformInitializer(function() {
 	};
 
 	// Used only if we switch to singleTask
-	window.webintent.onNewIntent(function(args) {
+	plugins.webintent.onNewIntent(function(args) {
 		if(args.uri !== null) {
 			app.navigateToPage(args.uri);
 		}
@@ -140,7 +140,7 @@ function sharePage() {
 	// @fixme if we don't have a page loaded, this menu item should be disabled...
 	var title = app.getCurrentTitle(),
 		url = app.getCurrentUrl().replace(/\.m\.wikipedia/, '.wikipedia');
-	window.share.show(
+	window.plugins.share.show(
 		{
 			subject: title,
 			text: url
@@ -152,7 +152,7 @@ chrome.showNotification = function(text) {
 	// Using PhoneGap-Toast plugin for Android's lightweight "Toast" style notifications.
 	// https://github.com/m00sey/PhoneGap-Toast
 	// http://developer.android.com/guide/topics/ui/notifiers/toasts.html
-	window.ToastPlugin.show_short(text);
+	window.plugins.ToastPlugin.show_short(text);
 }
 
 function updateMenuState() {
@@ -177,7 +177,7 @@ function updateMenuState() {
 		$command.attr('label', label);
 	});
 
-	window.SimpleMenu.loadMenu($('#appMenu')[0],
+	window.plugins.SimpleMenu.loadMenu($('#appMenu')[0],
 									   menu_handlers,
 									   function(success) {
 										   console.log(success);
@@ -194,14 +194,14 @@ function updateMenuState() {
 app.setCaching = function(enabled, success) {
 	console.log('setting cache to ' + enabled);
 	if(enabled) {
-		window.CacheMode.setCacheMode('LOAD_CACHE_ELSE_NETWORK', success);
+		window.plugins.CacheMode.setCacheMode('LOAD_CACHE_ELSE_NETWORK', success);
 	} else {
-		window.CacheMode.setCacheMode('LOAD_DEFAULT', success);
+		window.plugins.CacheMode.setCacheMode('LOAD_DEFAULT', success);
 	}
 }
 
 window.preferencesDB.addOnSet(function(id, value) {
-	window.preferences.set(id, value, function(){}, function(){});
+	window.plugins.preferences.set(id, value, function(){}, function(){});
 });
 
 savedPages.doSave = function(options) {
@@ -213,7 +213,7 @@ savedPages.doSave = function(options) {
 		$('#main img').each(function() {
 			var em = $(this);
 			var target = this.src.replace('file:', 'https:');
-			window.urlCache.getCachedPathForURI(target,
+			window.plugins.urlCache.getCachedPathForURI(target,
 				function(imageFile) {
 					em.attr('src', 'file://' + imageFile.file);
 				},
@@ -241,7 +241,7 @@ savedPages.doSave = function(options) {
 		populateSectionDeferreds.push( chrome.populateSection( section.id ) );
 	});
 	$.when.apply( $, populateSectionDeferreds ).done( function() {
-		window.urlCache.getCachedPathForURI( page.getAPIUrl(), gotPath, gotError );
+		window.plugins.urlCache.getCachedPathForURI( page.getAPIUrl(), gotPath, gotError );
 	});
 	return d;
 }
@@ -257,7 +257,7 @@ app.loadCachedPage = function( url, title, lang ) {
 				em.attr( 'src', 'file://' + linkPath.file );
 			}
 			var target = this.src.replace( 'file:', window.PROTOCOL + ':' );
-			window.urlCache.getCachedPathForURI( target, gotLinkPath, gotError );
+			window.plugins.urlCache.getCachedPathForURI( target, gotLinkPath, gotError );
 		});
 	};
 	var gotPath = function( cachedPage ) {
@@ -272,6 +272,6 @@ app.loadCachedPage = function( url, title, lang ) {
 		console.log( 'Error: ' + error );
 		chrome.hideSpinner();
 	}
-	window.urlCache.getCachedPathForURI( url, gotPath, gotError );
+	window.plugins.urlCache.getCachedPathForURI( url, gotPath, gotError );
 	return d;
 }
