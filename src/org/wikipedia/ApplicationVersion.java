@@ -15,7 +15,7 @@ public class ApplicationVersion extends Plugin {
 	public JSONObject getVersion() {
 		JSONObject info = new JSONObject();
 		try {
-			info.put("version", ctx.getContext().getPackageManager().getPackageInfo(ctx.getPackageName(), 0).versionName.toString());
+                    info.put("version", cordova.getContext().getPackageManager().getPackageInfo(cordova.getContext().getPackageName(), 0).versionName.toString());
 		} catch (NameNotFoundException e) {
 			LOG.d("error", e.getMessage());
 		} catch (JSONException e) {

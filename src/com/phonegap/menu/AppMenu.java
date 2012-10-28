@@ -40,7 +40,7 @@ public class AppMenu extends Plugin {
 
 	public void getScreenDensity() {
 		try {
-			final DroidGap droidGap = (DroidGap) this.ctx;
+                    final DroidGap droidGap = ((DroidGap) this.cordova);
 			DisplayMetrics metrics = new DisplayMetrics();
 			droidGap.getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
@@ -244,7 +244,7 @@ public class AppMenu extends Plugin {
 	}
 
 	@Override
-	public void onMessage(String id, Object data) {
+	public Object onMessage(String id, Object data) {
 
 		if (id.equals("onPrepareOptionsMenu")) {
 			Menu menu = (Menu) data;
@@ -258,6 +258,7 @@ public class AppMenu extends Plugin {
 			onMenuItemSelected(item);
 		}
 
+                return data;
 	}
 
 }

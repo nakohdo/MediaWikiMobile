@@ -72,7 +72,7 @@ public class WebIntent extends Plugin {
 				if (args.length() != 1) {
 					return new PluginResult(PluginResult.Status.INVALID_ACTION);
 				}
-				Intent i =  ((DroidGap)this.ctx).getIntent();
+				Intent i =  ((DroidGap)this.cordova).getIntent();
 				String extraName = args.getString(0);
 				return new PluginResult(PluginResult.Status.OK, i.hasExtra(extraName));
 
@@ -80,7 +80,7 @@ public class WebIntent extends Plugin {
 				if (args.length() != 1) {
 					return new PluginResult(PluginResult.Status.INVALID_ACTION);
 				}
-				Intent i = ((DroidGap)this.ctx).getIntent();
+				Intent i = ((DroidGap)this.cordova).getIntent();
 				String extraName = args.getString(0);
 				if (i.hasExtra(extraName)) {
 					return new PluginResult(PluginResult.Status.OK, i.getStringExtra(extraName));
@@ -94,8 +94,8 @@ public class WebIntent extends Plugin {
 
 				JSONObject intentData = new JSONObject();
 				try {
-					intentData.put("action", ((DroidGap)this.ctx).getIntent().getAction());
-					intentData.put("uri", ((DroidGap)this.ctx).getIntent().getDataString());
+					intentData.put("action", ((DroidGap)this.cordova).getIntent().getAction());
+					intentData.put("uri", ((DroidGap)this.cordova).getIntent().getDataString());
 				} catch (JSONException ex) {
 					// This code should technically never be reached
 					// Thank you, whoever who wrote up checked exceptions
@@ -148,6 +148,6 @@ public class WebIntent extends Plugin {
 			String value = extras.get(key);
 			i.putExtra(key, value);
 		}
-		this.ctx.startActivity(i);
+                ((DroidGap)this.cordova).startActivity(i);
 	}
 }
