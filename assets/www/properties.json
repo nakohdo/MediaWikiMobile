@@ -1,0 +1,27 @@
+{
+    "mainpage": "Main Page",
+    "base": "http:\/\/www.alexandermen.com\/Main_Page",
+    "sitename": "AlexanderMen",
+    "generator": "MediaWiki 1.19.2",
+    "phpversion": "5.4.4-7",
+    "phpsapi": "apache2handler",
+    "dbtype": "mysql",
+    "dbversion": "5.5.24-9",
+    "case": "first-letter",
+    "rights": "GNU Free Documentation License 1.2",
+    "lang": "en",
+    "fallback": [
+    ],
+    "fallback8bitEncoding": "windows-1252",
+    "writeapi": "",
+    "timezone": "America\/New_York",
+    "timeoffset": -240,
+    "articlepath": "\/$1",
+    "scriptpath": "",
+    "script": "\/index.php",
+    "variantarticlepath": false,
+    "server": "http:\/\/www.alexandermen.com",
+    "wikiid": "alexandermen-am_",
+    "time": "2012-10-28T22:55:11Z"
+    "apiurl": "http:\/\/www.alexandermen.com/api.php",
+}
