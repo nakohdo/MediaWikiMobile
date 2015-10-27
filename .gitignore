@@ -20,3 +20,4 @@ assets/www/sitematrix.json
 *.perspectivev3
 xcuserdata
 
+/nbproject/private/
